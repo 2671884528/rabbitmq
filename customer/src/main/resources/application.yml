@@ -1,0 +1,20 @@
+server:
+  port: 7001
+
+spring:
+  application:
+    name: service_consumer
+  rabbitmq:
+    addresses: 112.74.180.80
+    port: 5672
+    username: gyg
+    password: gyg
+    virtual-host: /ems
+    listener:
+      simple:
+        retry:
+          enabled: true
+          max-attempts: 2
+          max-interval: 6000
+          initial-interval: 2000
+          multiplier: 2

@@ -1,0 +1,12 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: service_product
+  rabbitmq:
+    addresses: 112.74.180.80
+    port: 5672
+    username: gyg
+    password: gyg
+    virtual-host: /ems
